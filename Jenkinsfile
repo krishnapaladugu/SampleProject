@@ -1,26 +1,11 @@
-pipeline {
-    agent any
+node { 
+        stage 'Build' 
+        echo 'Hi i am in Build Phase' 
+        stage 'Test' 
+         echo 'Hi i am in Test Phase'
+         stage 'Deploy'
+         echo 'Hi I am In Deploy Phase
 
-    stages {
-       node{
-        stage('Build')
-         {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') 
-        {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy')
-         {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-      }
-    }
-}
+      
+    
+   } 

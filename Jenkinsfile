@@ -4,7 +4,7 @@ node {
         stage 'Test' 
          echo 'Hi i am in Test Phase'
          stage 'Deploy'
-         echo 'Hi I am In Deploy Phase
+         echo 'Hi I am In Deploy Phase'
 
       
     
